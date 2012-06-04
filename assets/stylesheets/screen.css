@@ -1,0 +1,525 @@
+/* Complimentary green color scheme */
+/* $baseColor: #00408C; */
+/* $baseColor: #33FF99; */
+/* $complimentary1: #84FBFF; Chri's color */
+/* $complimentary1: c#86C614; */
+/* $complimentary1: #86C614; */
+/* $complimentary1: #BDE24F;*/
+/* $complimentary2: white; */
+/* $bodyBackground: #E8EBF0; */
+/* $border1: #8299E2; */
+/* $border1: #8278E2; */
+@font-face {
+  font-family: 'Bank Gothic Medium BT';
+  src: url("../fonts/Bank_Gothic_Medium_BT.ttf") format("truetype"); }
+
+body {
+  background: #e2e5e8;
+  min-width: 1250px;
+  font-size: 16px;
+  font-family: Helvetica Neue, Helvetica, sans-serif; }
+  body line {
+    height: 26px; }
+
+/* Overriding the selection colors in the boilerplate */
+::-moz-selection {
+  background: white;
+  color: #00408c;
+  text-shadow: none; }
+
+::selection {
+  background: white;
+  color: #00408c;
+  text-shadow: none; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%; }
+
+.wrapper100 {
+  width: 100%;
+  margin: 0 auto;
+  background: #97b0c4;
+  position: relative;
+  -webkit-box-shadow: 0 5px 10px #00408c;
+  -moz-box-shadow: 0 5px 10px #00408c;
+  box-shadow: 0 5px 10px #00408c;
+  overflow: visible; }
+
+.scroll-to {
+  width: 100%;
+  height: 120px; }
+
+#header-container {
+  height: 96px;
+  border-bottom: 15px solid #00408c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  min-width: 1180px; }
+
+#part-container, #what-container, #how-container, #work-container, #who-container, #contact-container {
+  position: relative;
+  z-index: 0;
+  margin-top: 0px;
+  width: 80%; }
+  #part-container header h1, #what-container header h1, #how-container header h1, #work-container header h1, #who-container header h1, #contact-container header h1 {
+    color: #00408c;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 4em;
+    font-variant: small-caps;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    text-shadow: 2px 2px 4px #66859e; }
+    #part-container header h1 span, #what-container header h1 span, #how-container header h1 span, #work-container header h1 span, #who-container header h1 span, #contact-container header h1 span {
+      color: white;
+      font-family: Helvetica Neue, Helvetica, sans-serif;
+      font-style: italic;
+      font-size: 0.5em; }
+  #part-container header p, #what-container header p, #how-container header p, #work-container header p, #who-container header p, #contact-container header p {
+    color: #00408c;
+    font-size: 1.2em; }
+  #part-container section h2, #what-container section h2, #how-container section h2, #work-container section h2, #who-container section h2, #contact-container section h2 {
+    color: #00408c;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 2em; }
+  #part-container section h3, #what-container section h3, #how-container section h3, #work-container section h3, #who-container section h3, #contact-container section h3 {
+    color: #00408c;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.5em; }
+  #part-container section ul li, #what-container section ul li, #how-container section ul li, #work-container section ul li, #who-container section ul li, #contact-container section ul li {
+    text-decoration: none; }
+  #part-container section .box, #what-container section .box, #how-container section .box, #work-container section .box, #who-container section .box, #contact-container section .box {
+    width: 25.0%; }
+  #part-container section dl, #what-container section dl, #how-container section dl, #work-container section dl, #who-container section dl, #contact-container section dl {
+    width: 25%; }
+    #part-container section dl h3, #what-container section dl h3, #how-container section dl h3, #work-container section dl h3, #who-container section dl h3, #contact-container section dl h3 {
+      display: inline; }
+    #part-container section dl dd, #what-container section dl dd, #how-container section dl dd, #work-container section dl dd, #who-container section dl dd, #contact-container section dl dd {
+      display: inline; }
+
+#main {
+  padding: 0px 0; }
+
+#main aside {
+  color: #00408c;
+  padding: 0px 5% 10px; }
+
+#footer-container footer .copyright {
+  margin-left: 50px;
+  color: #00408c;
+  font-family: 'Bank Gothic Medium BT', Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1.5em; }
+
+#banner-container {
+  height: 500px;
+  background: #97b0c4;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin: 111px 0px 0px;
+  -webkit-box-shadow: 0 5px 10px #00408c;
+  -moz-box-shadow: 0 5px 10px #00408c;
+  box-shadow: 0 5px 10px #00408c;
+  overflow: visible; }
+  #banner-container h1 {
+    width: 50%;
+    float: left;
+    z-index: 20;
+    display: inline;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 6em;
+    font-weight: normal;
+    font-family: 'Bank Gothic Medium BT', Helvetica Neue, Helvetica, sans-serif;
+    line-height: 90px;
+    color: #00408c;
+    text-shadow: 5px 5px 4px #66859e; }
+    #banner-container h1 span {
+      color: #00408c; }
+    #banner-container h1 span.connected {
+      color: white; }
+    #banner-container h1 span.ios {
+      color: white; }
+  #banner-container #pic {
+    height: 384px;
+    width: 30%;
+    background: url("../images/pic-iphone4.png") no-repeat;
+    position: relative;
+    display: inline;
+    float: right;
+    margin-top: 50px;
+    padding-left: 100px; }
+
+.column {
+  width: 45%;
+  margin: 0 auto;
+  min-width: 400px;
+  position: relative; }
+
+.left {
+  float: left;
+  display: inline; }
+
+.right {
+  float: right;
+  display: inline; }
+
+#what-container .logo {
+  float: left;
+  margin: 0px 0px 0px 10px; }
+#what-container .box {
+  float: left;
+  min-height: 50px;
+  margin: 0px 30px 0px 20px;
+  padding: 0px 0px 0px 0px; }
+  #what-container .box h3 padding {
+    left: 0px; }
+  #what-container .box p {
+    padding-left: 0px; }
+
+#work-container .bx-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  position: relative; }
+  #work-container .bx-wrapper .bx-window {
+    position: relative;
+    overflow: hidden;
+    width: 900px; }
+    #work-container .bx-wrapper .bx-window #projects-slider {
+      width: 999999px;
+      position: relative;
+      padding: 0;
+      left: -3000px; }
+      #work-container .bx-wrapper .bx-window #projects-slider li {
+        width: 1000px;
+        float: left;
+        list-style: none; }
+      #work-container .bx-wrapper .bx-window #projects-slider .project-description {
+        width: 250px;
+        float: left; }
+      #work-container .bx-wrapper .bx-window #projects-slider img {
+        float: left; }
+  #work-container .bx-wrapper .bx-prev {
+    position: absolute;
+    top: 200px;
+    left: -55px;
+    width: 31px;
+    height: 31px;
+    text-indent: -999999px;
+    background: url(/assets/images/gallery/icon_arrow_left.png) no-repeat 0 -31px; }
+  #work-container .bx-wrapper .bx-next {
+    position: absolute;
+    top: 200px;
+    right: -40px;
+    width: 31px;
+    height: 31px;
+    text-indent: -999999px;
+    background: url(/assets/images/gallery/icon_arrow_right.png) no-repeat 0 -31px; }
+  #work-container .bx-wrapper .bx-next:hover,
+  #work-container .bx-wrapper .bx-prev:hover {
+    background-position: 0 0; }
+  #work-container .bx-wrapper .bx-pager {
+    text-align: center;
+    padding-top: 7px;
+    font-size: 12px;
+    color: #00408C;
+    width: 175px;
+    margin: auto; }
+  #work-container .bx-wrapper .pager-link {
+    background: url("/assets/images/gallery/slideshow_bullet.png") no-repeat;
+    margin: 0 -40px; }
+  #work-container .bx-wrapper .pager-link.pager-active {
+    background: url("/assets/images/gallery/slideshow_bullet.png") no-repeat;
+    margin: 0 -20px;
+    padding-bottom: 12px; }
+  #work-container .bx-wrapper .bx-pager a {
+    margin-right: 5px;
+    color: #FFFFFF;
+    padding: 3px 8px 15px 12px;
+    font-size: 0px;
+    zoom: 1;
+    background-position: 0 1px;
+    text-indent: -999999px;
+    display: block;
+    float: left; }
+  #work-container .bx-wrapper .bx-pager .pager-active,
+  #work-container .bx-wrapper .bx-pager a:hover {
+    background-position: 0 -18px; }
+
+#who-container section img {
+  float: left;
+  margin-bottom: 2px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 1px #bbbbbb;
+  -webkit-box-shadow: 5px 5px 1px #bbbbbb;
+  -moz-box-shadow: 5px 5px 1px #bbbbbb;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 5px; }
+#who-container section span {
+  color: white;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 0.5em; }
+
+#contact-container {
+  margin-bottom: 300px; }
+  #contact-container #contact-info {
+    float: left;
+    margin-left: 30px; }
+
+#contact-section {
+  padding-bottom: 25px; }
+  #contact-section table {
+    color: #4d5861;
+    border-collapse: collapse;
+    float: left;
+    width: 33%; }
+    #contact-section table td {
+      padding-right: 10px;
+      vertical-align: middle;
+      height: 30px; }
+    #contact-section table td.label {
+      text-align: right;
+      color: #73818c;
+      font-size: 14px; }
+    #contact-section table td.email a {
+      color: #00408c;
+      text-shadow: 0px 1px 1px #fff;
+      text-decoration: none; }
+    #contact-section table td.data a {
+      color: #00408c;
+      text-shadow: 0px 1px 1px #fff;
+      text-decoration: none; }
+    #contact-section table td.data {
+      font-size: 15px;
+      color: #4d5861;
+      text-shadow: 0px 1px 1px #fff; }
+
+#footer-container {
+  height: 72px;
+  width: 100%;
+  z-index: 99999;
+  -moz-box-shadow: 0px, 0px, 2px, 1px, #cccccc;
+  -webkit-box-shadow: 0px, 0px, 2px, 1px, #cccccc;
+  box-shadow: 0px, 0px, 2px, 1px, #cccccc;
+  border-top: 20px solid #00408c; }
+
+#main aside {
+  border-top: 20px solid #00408c; }
+
+#header-container,
+#footer-container,
+#main aside {
+  background: white; }
+
+#logo {
+  margin-left: 50px;
+  margin-top: 5px;
+  margin-right: 50px;
+  display: inline;
+  position: relative;
+  height: 96px;
+  text-decoration: none; }
+  #logo #company {
+    position: absolute;
+    top: -26px;
+    left: 88px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #66859e;
+    line-height: 0.8; }
+    #logo #company #kowalski {
+      color: #00408c;
+      font-size: 3em;
+      font-family: 'Bank Gothic Medium BT', Helvetica Neue, Helvetica, sans-serif; }
+    #logo #company #consulting {
+      color: #00408c;
+      font-size: 2em;
+      font-family: 'Bank Gothic Medium BT', Helvetica Neue, Helvetica, sans-serif; }
+
+span.pointer {
+  display: block;
+  top: 12px;
+  height: 22px;
+  /*     background: $complimentary1; */
+  background: url("../images/pointer.png") no-repeat top center;
+  position: relative;
+  z-index: -10; }
+
+/* ==============
+   MOBILE: Menu
+   ============== */
+nav a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #66859e;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 22px;
+  font-weight: bold; }
+  nav a:visited {
+    color: #00408c; }
+  nav a:hover {
+    background: #00408c;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+  nav a .selected {
+    color: white;
+    background: #00408c;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+
+/* ===============
+   ALL: IE Fixes
+   =============== */
+.ie7 #title {
+  padding-top: 20px; }
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* ====================
+     INTERMEDIATE: Menu
+     ==================== */
+  nav a {
+    float: left;
+    margin: 0 7px;
+    padding: 7px 8px;
+    margin-bottom: 0; }
+
+  nav li:first-child a {
+    margin-left: 0; }
+
+  nav li:last-child a {
+    margin-right: 0; }
+
+  /* ========================
+     INTERMEDIATE: IE Fixes
+     ======================== */
+  nav ul li {
+    display: inline; }
+
+  .oldie nav a {
+    margin: 0 0.7%;
+    font-size: 24px; }
+
+  header h1 span {
+    display: block; }
+
+  #what-container .box {
+    display: block; } }
+@media only screen and (min-width: 768px) {
+  /* ====================
+     WIDE: CSS3 Effects
+     ==================== */
+  #main aside {
+    -webkit-box-shadow: 0 5px 10px #aaaaaa;
+    -moz-box-shadow: 0 5px 10px #aaaaaa;
+    box-shadow: 0 5px 10px #aaaaaa;
+    overflow: visible; }
+
+  /* ============
+     WIDE: Menu
+     ============ */
+  #title {
+    float: left; }
+
+  nav {
+    float: right;
+    width: 666px;
+    margin-top: 27px; }
+
+  /* ============
+     WIDE: Main
+     ============ */
+  #main article {
+    float: left;
+    width: 100%; }
+
+  #main aside {
+    float: right;
+    width: 80%; } }
+/* @media only screen and (min-width: 1140px) { */
+/* } */
+/* ===============
+   Maximal Width
+   =============== */
+#what-container .box {
+  display: inline; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  min-width: 840px;
+  position: relative; }
+
+header h1 span {
+  display: inline;
+  margin-left: 1em; }
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+.ir br {
+  display: none; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
