@@ -1,4 +1,6 @@
 @font-face {
   font-family: 'Bank Gothic Medium BT';
-  src: url('../fonts/Bank_Gothic_Medium_BT.otf') format('opentype');
+  src: url('../fonts/Bank_Gothic_Medium_BT.woff') format('woff'), 
+       url('../fonts/Bank_Gothic_Medium_BT.ttf')  format('truetype'),
+       url('../fonts/Bank_Gothic_Medium_BT.svg#svgFontName') format('svg');
 }

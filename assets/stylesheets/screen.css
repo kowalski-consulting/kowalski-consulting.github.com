@@ -11,7 +11,7 @@
 /* $border1: #8278E2; */
 @font-face {
   font-family: 'Bank Gothic Medium BT';
-  src: url("../fonts/Bank_Gothic_Medium_BT.otf") format("opentype"); }
+  src: url("../fonts/Bank_Gothic_Medium_BT.woff") format("woff"), url("../fonts/Bank_Gothic_Medium_BT.ttf") format("truetype"), url("../fonts/Bank_Gothic_Medium_BT.svg#svgFontName") format("svg"); }
 
 body {
   background: #e2e5e8;
@@ -355,31 +355,38 @@ span.pointer {
 /* ==============
    MOBILE: Menu
    ============== */
-nav a {
-  display: block;
-  padding: 10px 0;
-  color: #00408c;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 1px 1px 1px #66859e;
-  font-family: Helvetica Neue, Helvetica, sans-serif;
-  font-variant: small-caps;
-  font-size: 22px;
-  font-weight: bold; }
-  nav a:visited {
-    color: #00408c; }
-  nav a:hover {
-    background: #00408c;
-    color: white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
-  nav a .selected {
-    color: white;
-    background: #00408c;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; }
+nav {
+  float: left; }
+  nav ul {
+    float: left; }
+    nav ul li {
+      float: left;
+      display: inline; }
+  nav a {
+    display: block;
+    padding: 10px 0;
+    color: #00408c;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #66859e;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 22px;
+    font-weight: bold; }
+    nav a:visited {
+      color: #00408c; }
+    nav a:hover {
+      background: #00408c;
+      color: white;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+    nav a .selected {
+      color: white;
+      background: #00408c;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
 
 /* ===============
    ALL: IE Fixes
@@ -390,68 +397,72 @@ nav a {
 /* =============================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (min-width: 480px) {
-  /* ====================
-     INTERMEDIATE: Menu
-     ==================== */
-  nav a {
-    float: left;
-    margin: 0 7px;
-    padding: 7px 8px;
-    margin-bottom: 0; }
+/* @media only screen and (min-width: 480px) { */
+/* ====================
+   INTERMEDIATE: Menu
+   ==================== */
+nav a {
+  float: left;
+  margin: 0 7px;
+  padding: 7px 8px;
+  margin-bottom: 0; }
 
-  nav li:first-child a {
-    margin-left: 0; }
+nav li:first-child a {
+  margin-left: 0; }
 
-  nav li:last-child a {
-    margin-right: 0; }
+nav li:last-child a {
+  margin-right: 0; }
 
-  /* ========================
-     INTERMEDIATE: IE Fixes
-     ======================== */
-  nav ul li {
-    display: inline; }
+/* ========================
+   INTERMEDIATE: IE Fixes
+   ======================== */
+nav ul li {
+  display: inline; }
 
-  .oldie nav a {
-    margin: 0 0.7%;
-    font-size: 24px; }
+.oldie nav a {
+  margin: 0 0.7%;
+  font-size: 24px; }
 
-  header h1 span {
-    display: block; }
+header h1 span {
+  display: block; }
 
-  #what-container .box {
-    display: block; } }
-@media only screen and (min-width: 768px) {
-  /* ====================
-     WIDE: CSS3 Effects
-     ==================== */
-  #main aside {
-    -webkit-box-shadow: 0 5px 10px #aaaaaa;
-    -moz-box-shadow: 0 5px 10px #aaaaaa;
-    box-shadow: 0 5px 10px #aaaaaa;
-    overflow: visible; }
+#what-container .box {
+  display: block; }
 
-  /* ============
-     WIDE: Menu
-     ============ */
-  #title {
-    float: left; }
+/* } */
+/* @media only screen and (min-width: 768px) { */
+/* ====================
+   WIDE: CSS3 Effects
+   ==================== */
+#main aside {
+  -webkit-box-shadow: 0 5px 10px #aaaaaa;
+  -moz-box-shadow: 0 5px 10px #aaaaaa;
+  box-shadow: 0 5px 10px #aaaaaa;
+  overflow: visible; }
 
-  nav {
-    float: right;
-    width: 666px;
-    margin-top: 27px; }
+/* ============
+   WIDE: Menu
+   ============ */
+#title {
+  float: left; }
 
-  /* ============
-     WIDE: Main
-     ============ */
-  #main article {
-    float: left;
-    width: 100%; }
+nav {
+  float: right;
+  width: 666px;
+  margin-top: 27px; }
 
-  #main aside {
-    float: right;
-    width: 80%; } }
+/* ============
+   WIDE: Main
+   ============ */
+#main article {
+  float: left;
+  width: 100%; }
+
+#main aside {
+  float: right;
+  width: 80%; }
+
+/* } */
 /* @media only screen and (min-width: 1140px) { */
 /* } */
 /* ===============
