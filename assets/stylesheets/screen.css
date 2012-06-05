@@ -11,7 +11,7 @@
 /* $border1: #8278E2; */
 @font-face {
   font-family: 'Bank Gothic Medium BT';
-  src: url("../fonts/Bank_Gothic_Medium_BT.ttf") format("truetype"); }
+  src: url("../fonts/Bank_Gothic_Medium_BT.otf") format("opentype"); }
 
 body {
   background: #e2e5e8;
@@ -234,11 +234,9 @@ body {
     width: 175px;
     margin: auto; }
   #work-container .bx-wrapper .pager-link {
-    background: url("/assets/images/gallery/slideshow_bullet.png") no-repeat;
-    margin: 0 -40px; }
+    background: url("/assets/images/gallery/slideshow_bullet.png") no-repeat; }
   #work-container .bx-wrapper .pager-link.pager-active {
     background: url("/assets/images/gallery/slideshow_bullet.png") no-repeat;
-    margin: 0 -20px;
     padding-bottom: 12px; }
   #work-container .bx-wrapper .bx-pager a {
     margin-right: 5px;
