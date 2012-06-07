@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <!-- The xmlns name space is needed in order to use nXML mode in Emacs. -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" 
+      lang="en" version="HTML+RDFa 1.1">
   <head>
     <title>Kowalski Consulting - We build connected iOS apps</title>
     <meta charset="utf-8"/>
+    <meta name="description"
+          content="Kowalski Consulting designs and develops custom iOS
+                   apps for you!"/> 
+    <meta name="robots" content="index,follow" />
     <link rel="icon" type="image/png" 
-          href="/assets/images/icon.png">
+          href="/assets/images/icon.png"/>
 
     <link href="/assets/stylesheets/boilerplate.css" 
           media="screen, projection" rel="stylesheet" type="text/css" />
@@ -13,9 +18,9 @@
           media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="/assets/stylesheets/print.css" media="print"
           rel="stylesheet" type="text/css" /> 
-    <!--[if lt IE 9]> 
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <!--[if lt IE 9]> <script
+         src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
     <!--[if IE]> 
         <link href="/assets/stylesheets/ie.css"
         media="screen, projection" rel="stylesheet" type="text/css"/>
@@ -41,6 +46,32 @@
       Google Chrome Frame</a> to experience this
       site.</p><![endif]-->
   <body>
+    <!-- Good relations semantic markup in RDFa 1.1 for the company
+         entry -->
+    <!-- Unfortunately RDFa is not yet in the HTML5 rng schemas -->
+    <div profile="http://www.heppnetz.de/grprofile/">
+      <div about="#company" typeof="gr:BusinessEntity">
+        <div property="gr:legalName" content="Kowalski Consulting"></div>
+        <div rel="vcard:adr">
+          <div typeof="vcard:Address">
+            <div property="vcard:country-name" content="Switzerland"></div>
+            <div property="vcard:locality" content="Rovio"></div>
+            <div property="vcard:postal-code" content="CH-6821"></div>
+            <div property="vcard:street-address" content="In Basso 24"></div>
+          </div>
+        </div>
+        <div property="vcard:tel" content="+41 79 3955395"></div>
+        <div rel="foaf:depiction"
+             resource="http://kowalski-consulting.github.com/assets/images/logo_white.png">
+        </div>
+        <div rel="foaf:page" resource=""></div>
+      </div>
+    </div>
+
+    <!-- TODO: Add offer/product markup
+         http://wiki.goodrelations-vocabulary.org/Quickstart 
+    -->
+
     <header id="header-container" class="clearfix">
       <div id="top"></div>
       <div class='wrapper'>
@@ -424,18 +455,18 @@
           </section>
         </article>
       </div>
-</div>
+    </div>
 
-<div id="footer-container">
-  <footer class="wrapper">
-    <h3 class="copyright"> Kowalski Consulting &#xA9; 2012</h3>
-  </footer>
-</div>
+    <div id="footer-container">
+      <footer class="wrapper">
+        <h3 class="copyright"> Kowalski Consulting &#xA9; 2012</h3>
+      </footer>
+    </div>
 
-<script src="/assets/javascripts/libs/jquery-1.7.2.min.js"></script>
-<script src="/assets/javascripts/libs/jquery.tipTip.js"></script>
-<script src="/assets/javascripts/libs/jquery.bxSlider.min.js"></script>
-<script src="/assets/javascripts/script.js"></script>
+    <script src="/assets/javascripts/libs/jquery-1.7.2.min.js"></script>
+    <script src="/assets/javascripts/libs/jquery.tipTip.js"></script>
+    <script src="/assets/javascripts/libs/jquery.bxSlider.min.js"></script>
+    <script src="/assets/javascripts/script.js"></script>
 
-</body>
+  </body>
 </html>
