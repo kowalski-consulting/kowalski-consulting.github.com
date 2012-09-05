@@ -13,7 +13,6 @@
       slider.goToNextSlide();
       return false;
     });
-    $("a.what").scrollTo('#what', 3000);
     filterPath = function(string) {
       return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
     };

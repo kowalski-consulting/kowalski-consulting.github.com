@@ -11,8 +11,6 @@ jQuery ->
     slider.goToNextSlide()
     return false
 
-  $("a.what").scrollTo('#what', 3000)
-
   filterPath = (string) ->
     string.replace(/^\//,'')
     .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
@@ -45,6 +43,3 @@ jQuery ->
           event.preventDefault()
           $.scrollTo target, 1000, ->
             location.hash = targetID
-          # $(scrollElem).animate
-          #   scrollTop: targetOffset, 400, ->
-          #     location.hash = targetID
