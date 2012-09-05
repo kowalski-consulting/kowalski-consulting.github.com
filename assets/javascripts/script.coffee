@@ -11,6 +11,8 @@ jQuery ->
     slider.goToNextSlide()
     return false
 
+  $("a.what").scrollTo('#what', 3000)
+
   filterPath = (string) ->
     string.replace(/^\//,'')
     .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
@@ -30,7 +32,7 @@ jQuery ->
     return []
 
   locationPath = filterPath(location.pathname)
-  scrollElem = scrollableElement('html', 'body')
+  scrollElem = scrollableElement('html', 'body', 'div#banner-container')
 
   $('a[href*=#]').each ->
     thisPath = filterPath(this.pathname) || locationPath
@@ -41,6 +43,8 @@ jQuery ->
         targetOffset = target.offset().top
         $(this).click (event) ->
           event.preventDefault()
-          $(scrollElem).animate
-            scrollTop: targetOffset, 400, ->
-              location.hash = targetID
+          $.scrollTo target, 1000, ->
+            location.hash = targetID
+          # $(scrollElem).animate
+          #   scrollTop: targetOffset, 400, ->
+          #     location.hash = targetID

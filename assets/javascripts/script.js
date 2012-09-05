@@ -13,6 +13,7 @@
       slider.goToNextSlide();
       return false;
     });
+    $("a.what").scrollTo('#what', 3000);
     filterPath = function(string) {
       return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
     };
@@ -35,7 +36,7 @@
       return [];
     };
     locationPath = filterPath(location.pathname);
-    scrollElem = scrollableElement('html', 'body');
+    scrollElem = scrollableElement('html', 'body', 'div#banner-container');
     return $('a[href*=#]').each(function() {
       var target, targetID, targetOffset, thisPath;
       thisPath = filterPath(this.pathname) || locationPath;
@@ -46,9 +47,7 @@
           targetOffset = target.offset().top;
           return $(this).click(function(event) {
             event.preventDefault();
-            return $(scrollElem).animate({
-              scrollTop: targetOffset
-            }, 400, function() {
+            return $.scrollTo(target, 1000, function() {
               return location.hash = targetID;
             });
           });

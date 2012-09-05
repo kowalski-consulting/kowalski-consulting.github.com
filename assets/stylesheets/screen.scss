@@ -40,6 +40,12 @@ body {
   height: 120px;
 }
 
+/* Little hack to scroll to top */
+#top {
+    margin-top: -111px;
+    min-height: 111px;
+}
+
 .divider{
 }
 
