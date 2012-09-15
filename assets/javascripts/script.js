@@ -46,7 +46,9 @@
           targetOffset = target.offset().top;
           return $(this).click(function(event) {
             event.preventDefault();
-            return $.scrollTo(target, 1000, function() {
+            return $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function() {
               return location.hash = targetID;
             });
           });
