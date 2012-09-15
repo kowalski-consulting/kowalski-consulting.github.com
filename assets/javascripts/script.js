@@ -47,7 +47,7 @@
           return $(this).click(function(event) {
             event.preventDefault();
             return $('html, body').animate({
-              scrollTop: target.offset().top
+              scrollTop: targetOffset
             }, 1000, function() {
               return location.hash = targetID;
             });

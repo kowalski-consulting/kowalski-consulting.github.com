@@ -42,6 +42,6 @@ jQuery ->
         $(this).click (event) ->
           event.preventDefault()
           $('html, body').animate
-            scrollTop: target.offset().top,
+            scrollTop: targetOffset,
             1000, ->
               location.hash = targetID
