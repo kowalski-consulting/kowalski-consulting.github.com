@@ -37,17 +37,16 @@
     locationPath = filterPath(location.pathname);
     scrollElem = scrollableElement('html', 'body', 'div#banner-container');
     return $('a[href*=#]').each(function() {
-      var target, targetID, targetOffset, thisPath;
+      var target, targetID, thisPath;
       thisPath = filterPath(this.pathname) || locationPath;
       if (locationPath === thisPath && (location.hostname === this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
         targetID = this.hash;
         target = $(targetID);
         if (this.hash) {
-          targetOffset = target.offset().top;
           return $(this).click(function(event) {
             event.preventDefault();
             return $('html, body').animate({
-              scrollTop: targetOffset
+              scrollTop: target.offset().top
             }, 1000, function() {
               return location.hash = targetID;
             });
